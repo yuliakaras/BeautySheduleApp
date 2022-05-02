@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C9357C72820385C00EAF3AA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9357C62820385C00EAF3AA /* AuthService.swift */; };
+		6CA88EBD2801DEEE00A690DD /* BeautyScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EBC2801DEEE00A690DD /* BeautyScheduleApp.swift */; };
+		6CA88EBF2801DEEE00A690DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EBE2801DEEE00A690DD /* ContentView.swift */; };
+		6CA88EC12801DEF000A690DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA88EC02801DEF000A690DD /* Assets.xcassets */; };
+		6CA88EC42801DEF000A690DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA88EC32801DEF000A690DD /* Preview Assets.xcassets */; };
+		6CA88ECE2801DEF000A690DD /* BeautyScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88ECD2801DEF000A690DD /* BeautyScheduleTests.swift */; };
+		6CA88ED82801DEF000A690DD /* BeautyScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88ED72801DEF000A690DD /* BeautyScheduleUITests.swift */; };
+		6CA88EDA2801DEF000A690DD /* BeautyScheduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88ED92801DEF000A690DD /* BeautyScheduleUITestsLaunchTests.swift */; };
+		6CA88EE72801FA7400A690DD /* SkinCharecteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EE62801FA7300A690DD /* SkinCharecteristics.swift */; };
+		6CA88EED28045A6600A690DD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EEC28045A6500A690DD /* Product.swift */; };
+		6CA88EF32804765200A690DD /* ExfoliationStageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EF22804765200A690DD /* ExfoliationStageService.swift */; };
+		6CA88EF528047B8400A690DD /* SelectedProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EF428047B8400A690DD /* SelectedProducts.swift */; };
+		6CA88EF92804E49000A690DD /* MorningRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EF82804E49000A690DD /* MorningRoutineView.swift */; };
+		6CA88EFB2804E4A800A690DD /* NightRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EFA2804E4A800A690DD /* NightRoutineView.swift */; };
+		6CA88EFD2808467400A690DD /* DailyRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EFC2808467400A690DD /* DailyRoutineView.swift */; };
+		6CA88EFF280869EA00A690DD /* DataResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88EFE280869EA00A690DD /* DataResponder.swift */; };
+		6CA88F0328097AFD00A690DD /* AdditionalCareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88F0228097AFC00A690DD /* AdditionalCareView.swift */; };
+		6CCF2973281C408B00968256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF2972281C408B00968256 /* GoogleService-Info.plist */; };
+		6CCF2976281C414C00968256 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6CCF2975281C414C00968256 /* FirebaseAuth */; };
+		6CCF297A281C7D6900968256 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2979281C7D6900968256 /* ProfileView.swift */; };
+		6CCF297C281C9D7D00968256 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF297B281C9D7D00968256 /* MenuView.swift */; };
+		6CCF297E281F219700968256 /* BeautyStageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF297D281F219700968256 /* BeautyStageRow.swift */; };
+		6CCF2980281F580900968256 /* HeaderMorningRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF297F281F580800968256 /* HeaderMorningRoutine.swift */; };
+		6CCF2982281F5F3D00968256 /* NavigationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2981281F5F3D00968256 /* NavigationRowView.swift */; };
+		6CCF2984281F60C700968256 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2983281F60C700968256 /* MainPageView.swift */; };
+		6CCF2986281F6F3400968256 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2985281F6F3400968256 /* QuizView.swift */; };
+		6CCF2988281F6F9D00968256 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2987281F6F9D00968256 /* AuthView.swift */; };
+		6CCF298B281F70C700968256 /* SkinTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF298A281F70C700968256 /* SkinTypeEnum.swift */; };
+		6CCF298D281F70F800968256 /* MakeupFrequencyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF298C281F70F800968256 /* MakeupFrequencyEnum.swift */; };
+		6CCF298F281F713400968256 /* ConcernsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF298E281F713400968256 /* ConcernsEnum.swift */; };
+		6CCF2991281F715200968256 /* SunReactionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2990281F715200968256 /* SunReactionsEnum.swift */; };
+		6CCF2995281F71C500968256 /* CleansingProductsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2994281F71C500968256 /* CleansingProductsEnum.swift */; };
+		6CCF2997281F71F300968256 /* ToningProductsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2996281F71F300968256 /* ToningProductsEnum.swift */; };
+		6CCF2999281F721700968256 /* MoisturizingAndNourishingProductsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF2998281F721700968256 /* MoisturizingAndNourishingProductsEnum.swift */; };
+		6CCF299B281F725C00968256 /* ExfoliationProductsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF299A281F725C00968256 /* ExfoliationProductsEnum.swift */; };
+		6CCF299D281F749D00968256 /* WeekEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF299C281F749D00968256 /* WeekEnum.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CA88ECA2801DEF000A690DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA88EB12801DEEE00A690DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA88EB82801DEEE00A690DD;
+			remoteInfo = BeautySchedule;
+		};
+		6CA88ED42801DEF000A690DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA88EB12801DEEE00A690DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA88EB82801DEEE00A690DD;
+			remoteInfo = BeautySchedule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C9357C62820385C00EAF3AA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		6CA88EB92801DEEE00A690DD /* BeautySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA88EBC2801DEEE00A690DD /* BeautyScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyScheduleApp.swift; sourceTree = "<group>"; };
+		6CA88EBE2801DEEE00A690DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6CA88EC02801DEF000A690DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA88EC32801DEF000A690DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CA88EC92801DEF000A690DD /* BeautyScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA88ECD2801DEF000A690DD /* BeautyScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyScheduleTests.swift; sourceTree = "<group>"; };
+		6CA88ED32801DEF000A690DD /* BeautyScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA88ED72801DEF000A690DD /* BeautyScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyScheduleUITests.swift; sourceTree = "<group>"; };
+		6CA88ED92801DEF000A690DD /* BeautyScheduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyScheduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CA88EE62801FA7300A690DD /* SkinCharecteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCharecteristics.swift; sourceTree = "<group>"; };
+		6CA88EEC28045A6500A690DD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6CA88EF22804765200A690DD /* ExfoliationStageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExfoliationStageService.swift; sourceTree = "<group>"; };
+		6CA88EF428047B8400A690DD /* SelectedProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProducts.swift; sourceTree = "<group>"; };
+		6CA88EF82804E49000A690DD /* MorningRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningRoutineView.swift; sourceTree = "<group>"; };
+		6CA88EFA2804E4A800A690DD /* NightRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightRoutineView.swift; sourceTree = "<group>"; };
+		6CA88EFC2808467400A690DD /* DailyRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoutineView.swift; sourceTree = "<group>"; };
+		6CA88EFE280869EA00A690DD /* DataResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponder.swift; sourceTree = "<group>"; };
+		6CA88F0228097AFC00A690DD /* AdditionalCareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalCareView.swift; sourceTree = "<group>"; };
+		6CCF2972281C408B00968256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BeautySchedule/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6CCF2979281C7D6900968256 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6CCF297B281C9D7D00968256 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		6CCF297D281F219700968256 /* BeautyStageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyStageRow.swift; sourceTree = "<group>"; };
+		6CCF297F281F580800968256 /* HeaderMorningRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMorningRoutine.swift; sourceTree = "<group>"; };
+		6CCF2981281F5F3D00968256 /* NavigationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRowView.swift; sourceTree = "<group>"; };
+		6CCF2983281F60C700968256 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		6CCF2985281F6F3400968256 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		6CCF2987281F6F9D00968256 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		6CCF298A281F70C700968256 /* SkinTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinTypeEnum.swift; sourceTree = "<group>"; };
+		6CCF298C281F70F800968256 /* MakeupFrequencyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupFrequencyEnum.swift; sourceTree = "<group>"; };
+		6CCF298E281F713400968256 /* ConcernsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcernsEnum.swift; sourceTree = "<group>"; };
+		6CCF2990281F715200968256 /* SunReactionsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunReactionsEnum.swift; sourceTree = "<group>"; };
+		6CCF2994281F71C500968256 /* CleansingProductsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleansingProductsEnum.swift; sourceTree = "<group>"; };
+		6CCF2996281F71F300968256 /* ToningProductsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToningProductsEnum.swift; sourceTree = "<group>"; };
+		6CCF2998281F721700968256 /* MoisturizingAndNourishingProductsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoisturizingAndNourishingProductsEnum.swift; sourceTree = "<group>"; };
+		6CCF299A281F725C00968256 /* ExfoliationProductsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExfoliationProductsEnum.swift; sourceTree = "<group>"; };
+		6CCF299C281F749D00968256 /* WeekEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekEnum.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CA88EB62801DEEE00A690DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCF2976281C414C00968256 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA88EC62801DEF000A690DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA88ED02801DEF000A690DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA88EB02801DEEE00A690DD = {
+			isa = PBXGroup;
+			children = (
+				6CA88EBB2801DEEE00A690DD /* BeautySchedule */,
+				6CA88ECC2801DEF000A690DD /* BeautyScheduleTests */,
+				6CA88ED62801DEF000A690DD /* BeautyScheduleUITests */,
+				6CA88EBA2801DEEE00A690DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CA88EBA2801DEEE00A690DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA88EB92801DEEE00A690DD /* BeautySchedule.app */,
+				6CA88EC92801DEF000A690DD /* BeautyScheduleTests.xctest */,
+				6CA88ED32801DEF000A690DD /* BeautyScheduleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA88EBB2801DEEE00A690DD /* BeautySchedule */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF2972281C408B00968256 /* GoogleService-Info.plist */,
+				6CA88EF12804760900A690DD /* Service */,
+				6CA88EBC2801DEEE00A690DD /* BeautyScheduleApp.swift */,
+				6CCF2989281F6FDD00968256 /* Enum */,
+				6CCF2985281F6F3400968256 /* QuizView.swift */,
+				6CCF2987281F6F9D00968256 /* AuthView.swift */,
+				6CA88EBE2801DEEE00A690DD /* ContentView.swift */,
+				6CCF2979281C7D6900968256 /* ProfileView.swift */,
+				6CCF2981281F5F3D00968256 /* NavigationRowView.swift */,
+				6CCF297B281C9D7D00968256 /* MenuView.swift */,
+				6CCF2983281F60C700968256 /* MainPageView.swift */,
+				6CA88EF82804E49000A690DD /* MorningRoutineView.swift */,
+				6CA88EFA2804E4A800A690DD /* NightRoutineView.swift */,
+				6CA88EFC2808467400A690DD /* DailyRoutineView.swift */,
+				6CCF297D281F219700968256 /* BeautyStageRow.swift */,
+				6CA88F0228097AFC00A690DD /* AdditionalCareView.swift */,
+				6CCF297F281F580800968256 /* HeaderMorningRoutine.swift */,
+				6CA88EEE2804751300A690DD /* Model */,
+				6CA88EC02801DEF000A690DD /* Assets.xcassets */,
+				6CA88EC22801DEF000A690DD /* Preview Content */,
+			);
+			path = BeautySchedule;
+			sourceTree = "<group>";
+		};
+		6CA88EC22801DEF000A690DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6CA88EC32801DEF000A690DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CA88ECC2801DEF000A690DD /* BeautyScheduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CA88ECD2801DEF000A690DD /* BeautyScheduleTests.swift */,
+			);
+			path = BeautyScheduleTests;
+			sourceTree = "<group>";
+		};
+		6CA88ED62801DEF000A690DD /* BeautyScheduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CA88ED72801DEF000A690DD /* BeautyScheduleUITests.swift */,
+				6CA88ED92801DEF000A690DD /* BeautyScheduleUITestsLaunchTests.swift */,
+			);
+			path = BeautyScheduleUITests;
+			sourceTree = "<group>";
+		};
+		6CA88EEE2804751300A690DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CA88EE62801FA7300A690DD /* SkinCharecteristics.swift */,
+				6CA88EEC28045A6500A690DD /* Product.swift */,
+				6CA88EF428047B8400A690DD /* SelectedProducts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CA88EF12804760900A690DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6CA88EF22804765200A690DD /* ExfoliationStageService.swift */,
+				6CA88EFE280869EA00A690DD /* DataResponder.swift */,
+				6C9357C62820385C00EAF3AA /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6CCF2989281F6FDD00968256 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF298A281F70C700968256 /* SkinTypeEnum.swift */,
+				6CCF298C281F70F800968256 /* MakeupFrequencyEnum.swift */,
+				6CCF298E281F713400968256 /* ConcernsEnum.swift */,
+				6CCF2990281F715200968256 /* SunReactionsEnum.swift */,
+				6CCF2994281F71C500968256 /* CleansingProductsEnum.swift */,
+				6CCF2996281F71F300968256 /* ToningProductsEnum.swift */,
+				6CCF2998281F721700968256 /* MoisturizingAndNourishingProductsEnum.swift */,
+				6CCF299A281F725C00968256 /* ExfoliationProductsEnum.swift */,
+				6CCF299C281F749D00968256 /* WeekEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CA88EB82801DEEE00A690DD /* BeautySchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA88EDD2801DEF000A690DD /* Build configuration list for PBXNativeTarget "BeautySchedule" */;
+			buildPhases = (
+				6CA88EB52801DEEE00A690DD /* Sources */,
+				6CA88EB62801DEEE00A690DD /* Frameworks */,
+				6CA88EB72801DEEE00A690DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeautySchedule;
+			packageProductDependencies = (
+				6CCF2975281C414C00968256 /* FirebaseAuth */,
+			);
+			productName = BeautySchedule;
+			productReference = 6CA88EB92801DEEE00A690DD /* BeautySchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CA88EC82801DEF000A690DD /* BeautyScheduleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA88EE02801DEF000A690DD /* Build configuration list for PBXNativeTarget "BeautyScheduleTests" */;
+			buildPhases = (
+				6CA88EC52801DEF000A690DD /* Sources */,
+				6CA88EC62801DEF000A690DD /* Frameworks */,
+				6CA88EC72801DEF000A690DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA88ECB2801DEF000A690DD /* PBXTargetDependency */,
+			);
+			name = BeautyScheduleTests;
+			productName = BeautyScheduleTests;
+			productReference = 6CA88EC92801DEF000A690DD /* BeautyScheduleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CA88ED22801DEF000A690DD /* BeautyScheduleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA88EE32801DEF000A690DD /* Build configuration list for PBXNativeTarget "BeautyScheduleUITests" */;
+			buildPhases = (
+				6CA88ECF2801DEF000A690DD /* Sources */,
+				6CA88ED02801DEF000A690DD /* Frameworks */,
+				6CA88ED12801DEF000A690DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA88ED52801DEF000A690DD /* PBXTargetDependency */,
+			);
+			name = BeautyScheduleUITests;
+			productName = BeautyScheduleUITests;
+			productReference = 6CA88ED32801DEF000A690DD /* BeautyScheduleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA88EB12801DEEE00A690DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6CA88EB82801DEEE00A690DD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6CA88EC82801DEF000A690DD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6CA88EB82801DEEE00A690DD;
+					};
+					6CA88ED22801DEF000A690DD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6CA88EB82801DEEE00A690DD;
+					};
+				};
+			};
+			buildConfigurationList = 6CA88EB42801DEEE00A690DD /* Build configuration list for PBXProject "BeautySchedule" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CA88EB02801DEEE00A690DD;
+			packageReferences = (
+				6CCF2974281C414C00968256 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6CA88EBA2801DEEE00A690DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CA88EB82801DEEE00A690DD /* BeautySchedule */,
+				6CA88EC82801DEF000A690DD /* BeautyScheduleTests */,
+				6CA88ED22801DEF000A690DD /* BeautyScheduleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CA88EB72801DEEE00A690DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA88EC42801DEF000A690DD /* Preview Assets.xcassets in Resources */,
+				6CA88EC12801DEF000A690DD /* Assets.xcassets in Resources */,
+				6CCF2973281C408B00968256 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA88EC72801DEF000A690DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA88ED12801DEF000A690DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CA88EB52801DEEE00A690DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCF299B281F725C00968256 /* ExfoliationProductsEnum.swift in Sources */,
+				6CCF2999281F721700968256 /* MoisturizingAndNourishingProductsEnum.swift in Sources */,
+				6CA88EE72801FA7400A690DD /* SkinCharecteristics.swift in Sources */,
+				6CA88EFD2808467400A690DD /* DailyRoutineView.swift in Sources */,
+				6CA88F0328097AFD00A690DD /* AdditionalCareView.swift in Sources */,
+				6CCF2982281F5F3D00968256 /* NavigationRowView.swift in Sources */,
+				6CA88EF32804765200A690DD /* ExfoliationStageService.swift in Sources */,
+				6CA88EF528047B8400A690DD /* SelectedProducts.swift in Sources */,
+				6CA88EED28045A6600A690DD /* Product.swift in Sources */,
+				6CA88EFB2804E4A800A690DD /* NightRoutineView.swift in Sources */,
+				6CCF2988281F6F9D00968256 /* AuthView.swift in Sources */,
+				6C9357C72820385C00EAF3AA /* AuthService.swift in Sources */,
+				6CCF298D281F70F800968256 /* MakeupFrequencyEnum.swift in Sources */,
+				6CA88EFF280869EA00A690DD /* DataResponder.swift in Sources */,
+				6CCF2995281F71C500968256 /* CleansingProductsEnum.swift in Sources */,
+				6CCF299D281F749D00968256 /* WeekEnum.swift in Sources */,
+				6CCF297C281C9D7D00968256 /* MenuView.swift in Sources */,
+				6CA88EBF2801DEEE00A690DD /* ContentView.swift in Sources */,
+				6CCF2986281F6F3400968256 /* QuizView.swift in Sources */,
+				6CA88EF92804E49000A690DD /* MorningRoutineView.swift in Sources */,
+				6CCF2984281F60C700968256 /* MainPageView.swift in Sources */,
+				6CCF297A281C7D6900968256 /* ProfileView.swift in Sources */,
+				6CCF2991281F715200968256 /* SunReactionsEnum.swift in Sources */,
+				6CCF297E281F219700968256 /* BeautyStageRow.swift in Sources */,
+				6CCF298B281F70C700968256 /* SkinTypeEnum.swift in Sources */,
+				6CCF298F281F713400968256 /* ConcernsEnum.swift in Sources */,
+				6CCF2997281F71F300968256 /* ToningProductsEnum.swift in Sources */,
+				6CCF2980281F580900968256 /* HeaderMorningRoutine.swift in Sources */,
+				6CA88EBD2801DEEE00A690DD /* BeautyScheduleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA88EC52801DEF000A690DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA88ECE2801DEF000A690DD /* BeautyScheduleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA88ECF2801DEF000A690DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA88ED82801DEF000A690DD /* BeautyScheduleUITests.swift in Sources */,
+				6CA88EDA2801DEF000A690DD /* BeautyScheduleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CA88ECB2801DEF000A690DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA88EB82801DEEE00A690DD /* BeautySchedule */;
+			targetProxy = 6CA88ECA2801DEF000A690DD /* PBXContainerItemProxy */;
+		};
+		6CA88ED52801DEF000A690DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA88EB82801DEEE00A690DD /* BeautySchedule */;
+			targetProxy = 6CA88ED42801DEF000A690DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6CA88EDB2801DEF000A690DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CA88EDC2801DEF000A690DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CA88EDE2801DEF000A690DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeautySchedule/Preview Content\"";
+				DEVELOPMENT_TEAM = ZN35ZJB394;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tms.BeautySchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CA88EDF2801DEF000A690DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeautySchedule/Preview Content\"";
+				DEVELOPMENT_TEAM = ZN35ZJB394;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tms.BeautySchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CA88EE12801DEF000A690DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZN35ZJB394;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tms.BeautyScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautySchedule.app/BeautySchedule";
+			};
+			name = Debug;
+		};
+		6CA88EE22801DEF000A690DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZN35ZJB394;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tms.BeautyScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautySchedule.app/BeautySchedule";
+			};
+			name = Release;
+		};
+		6CA88EE42801DEF000A690DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZN35ZJB394;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tms.BeautyScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeautySchedule;
+			};
+			name = Debug;
+		};
+		6CA88EE52801DEF000A690DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZN35ZJB394;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tms.BeautyScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeautySchedule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CA88EB42801DEEE00A690DD /* Build configuration list for PBXProject "BeautySchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA88EDB2801DEF000A690DD /* Debug */,
+				6CA88EDC2801DEF000A690DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA88EDD2801DEF000A690DD /* Build configuration list for PBXNativeTarget "BeautySchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA88EDE2801DEF000A690DD /* Debug */,
+				6CA88EDF2801DEF000A690DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA88EE02801DEF000A690DD /* Build configuration list for PBXNativeTarget "BeautyScheduleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA88EE12801DEF000A690DD /* Debug */,
+				6CA88EE22801DEF000A690DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA88EE32801DEF000A690DD /* Build configuration list for PBXNativeTarget "BeautyScheduleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA88EE42801DEF000A690DD /* Debug */,
+				6CA88EE52801DEF000A690DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CCF2974281C414C00968256 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CCF2975281C414C00968256 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CCF2974281C414C00968256 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6CA88EB12801DEEE00A690DD /* Project object */;
+}
