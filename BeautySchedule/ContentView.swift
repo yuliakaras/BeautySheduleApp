@@ -11,7 +11,8 @@ struct ContentView: View {
     @State var quizFinished = UserDefaults.standard.value(forKey: "quizFinished") as? Bool ?? false
 
     var body: some View {
-        NavigationView{
+//        NavigationView{
+        VStack{
                 if status {
                     Question1()
                 } else if status && quizFinished {
@@ -28,7 +29,6 @@ struct ContentView: View {
                         self.status = status
                     }
             }
-       
         }
 }
     
