@@ -4,6 +4,7 @@ struct Question1: View {
     var ageGaps = ["<25", "25-40", ">40"]
     @ObservedObject var skinCharecteristic = SkinCharecteristics()
     var body: some View {
+        NavigationView{
             VStack{
             Text("What's your age?").foregroundColor(Color.blue.opacity(0.8)).font(.headline)
             Picker("Age selection" , selection: $skinCharecteristic.age) {
@@ -12,8 +13,10 @@ struct Question1: View {
                     }
             }.pickerStyle(InlinePickerStyle())
                  
-                NavigationLink("Next", destination: Question2()).foregroundColor(Color.gray)
-            }
+            NavigationLink("Next", destination: Question2()).foregroundColor(Color.gray)
+        }
+        }.navigationViewStyle(StackNavigationViewStyle())
+        
         
     }
     
